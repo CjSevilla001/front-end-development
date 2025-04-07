@@ -1,0 +1,111 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #fefefe;
+    color: #333;
+  }
+  
+  header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header nav {
+    margin-top: 10px;
+  }
+  
+  header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    color: #41aef1;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .hero h2 {
+    margin-bottom: 10px;
+  }
+  
+  .hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #41aef1;
+  }
+  
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+  }
+  
+  .product {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header nav {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .hero {
+      padding: 20px;
+    }
+  
+    .products {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .products {
+      grid-template-columns: 1fr;
+    }
+  
+    .hero h2 {
+      font-size: 1.5em;
+    }
+  }
+  
